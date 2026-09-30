@@ -4,40 +4,41 @@
 <meta charset="UTF-8">
 <title>From Campus to Code — A0 Research Poster</title>
 <style>
+  @page { size: 841mm 1189mm; margin: 0; }
   * { margin:0; padding:0; box-sizing:border-box; }
   html,body { background:#ffffff; }
   body { font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif; }
-  .page { width:6728px; height:9512px; background:#f4f6f9; position:relative; overflow:hidden; }
-  .content { padding:200px 240px 0 240px; }
+  .page { width:841mm; height:1189mm; background:#f4f6f9; position:relative; overflow:hidden; }
+  .content { padding:25mm 30mm 0 30mm; }
   /* Title band */
-  .titleband { text-align:center; padding:40px 120px 70px 120px; border-bottom:10px solid #16355e; margin-bottom:70px; }
-  .title { font-size:158px; font-weight:800; color:#16355e; line-height:1.12; letter-spacing:-1px; }
-  .subtitle { font-size:64px; font-weight:400; color:#44546a; margin-top:44px; line-height:1.3; }
+  .titleband { text-align:center; padding:5mm 15mm 8.75mm; border-bottom:1.25mm solid #16355e; margin-bottom:8.75mm; }
+  .title { font-size:19.75mm; font-weight:800; color:#16355e; line-height:1.12; letter-spacing:-0.12mm; }
+  .subtitle { font-size:8mm; font-weight:400; color:#44546a; margin-top:5.5mm; line-height:1.3; }
   /* Section headers */
-  h2.sec { font-size:66px; font-weight:700; color:#16355e; margin-bottom:34px; line-height:1.2; }
-  h2.sec .n { display:inline-block; color:#ffffff; background:#16355e; padding:6px 34px; margin-right:26px; border-radius:12px; font-size:56px; font-weight:800; }
-  h3.sub { font-size:48px; font-weight:600; color:#1f3f74; margin:30px 0 20px 0; line-height:1.25; }
-  h4.kw { font-size:38px; font-weight:600; color:#2e6db4; margin:16px 0 10px 0; line-height:1.3; }
-  p, li { font-size:34px; color:#2a2f36; line-height:1.55; text-align:justify; }
-  ul,ol { padding-left:60px; }
-  li { margin-bottom:14px; }
-  .kwline { font-size:31px; color:#5a6b83; font-style:italic; margin:10px 0 26px 0; line-height:1.45; }
-  .stage { margin-bottom:30px; }
+  h2.sec { font-size:8.25mm; font-weight:700; color:#16355e; margin-bottom:4.25mm; line-height:1.2; }
+  h2.sec .n { display:inline-block; color:#ffffff; background:#16355e; padding:0.75mm 4.25mm; margin-right:3.25mm; border-radius:1.5mm; font-size:7mm; font-weight:800; }
+  h3.sub { font-size:6mm; font-weight:600; color:#1f3f74; margin:3.75mm 0 2.5mm 0; line-height:1.25; }
+  h4.kw { font-size:4.75mm; font-weight:600; color:#2e6db4; margin:2mm 0 1.25mm 0; line-height:1.3; }
+  p, li { font-size:4.25mm; color:#2a2f36; line-height:1.55; text-align:justify; }
+  ul,ol { padding-left:7.5mm; }
+  li { margin-bottom:1.75mm; }
+  .kwline { font-size:3.9mm; color:#5a6b83; font-style:italic; margin:1.25mm 0 3.25mm 0; line-height:1.45; }
+  .stage { margin-bottom:3.75mm; }
   /* Tables for columns */
   table.cols { width:100%; border-collapse:separate; border-spacing:0; }
   table.cols td { vertical-align:top; }
-  .col { background:#ffffff; border:2px solid #dde3ec; border-radius:22px; padding:52px 52px; }
-  .col h2.sec { margin-bottom:24px; }
-  .takeaway { background:#eaf0f8; border-left:14px solid #16355e; padding:36px 44px; margin-top:40px; border-radius:10px; }
-  .takeaway p { font-size:40px; font-weight:700; color:#16355e; text-align:left; line-height:1.45; }
-  .ref { margin-bottom:26px; padding-left:52px; position:relative; }
-  .ref .b { position:absolute; left:0; top:6px; font-size:40px; font-weight:800; color:#16355e; }
-  .tl { margin:18px 0; }
-  .tlrow { display:flex; align-items:flex-start; margin-bottom:22px; }
-  .tlnode { flex:0 0 300px; font-weight:700; color:#16355e; font-size:34px; padding-top:4px; }
-  .tlarrow { flex:0 0 66px; text-align:center; color:#2e6db4; font-size:44px; padding-top:2px; }
-  .tldesc { font-size:32px; color:#2a2f36; line-height:1.5; }
-  .bottomband { position:absolute; bottom:0; left:0; width:6728px; height:2320px; background:#ffffff; }
+  .col { background:#ffffff; border:0.25mm solid #dde3ec; border-radius:2.75mm; padding:6.5mm 6.5mm; }
+  .col h2.sec { margin-bottom:3mm; }
+  .takeaway { background:#eaf0f8; border-left:1.75mm solid #16355e; padding:4.5mm 5.5mm; margin-top:5mm; border-radius:1.25mm; }
+  .takeaway p { font-size:5mm; font-weight:700; color:#16355e; text-align:left; line-height:1.45; }
+  .ref { margin-bottom:3.25mm; padding-left:6.5mm; position:relative; }
+  .ref .b { position:absolute; left:0; top:0.75mm; font-size:5mm; font-weight:800; color:#16355e; }
+  .tl { margin:2.25mm 0; }
+  .tlrow { display:flex; align-items:flex-start; margin-bottom:2.75mm; }
+  .tlnode { flex:0 0 37.5mm; font-weight:700; color:#16355e; font-size:4.25mm; padding-top:0.5mm; }
+  .tlarrow { flex:0 0 8.25mm; text-align:center; color:#2e6db4; font-size:5.5mm; padding-top:0.25mm; }
+  .tldesc { font-size:4mm; color:#2a2f36; line-height:1.5; }
+  .bottomband { position:absolute; bottom:0; left:0; width:841mm; height:290mm; background:#ffffff; }
 </style>
 </head>
 <body>
@@ -50,10 +51,10 @@
     </div>
 
     <!-- TOP THREE COLUMNS -->
-    <table class="cols" style="margin-bottom:70px;">
+    <table class="cols" style="margin-bottom:8.75mm;">
       <tr>
         <!-- LEFT COLUMN -->
-        <td style="width:33.333%; padding-right:120px;">
+        <td style="width:33.333%; padding-right:15mm;">
           <div class="col">
             <h2 class="sec"><span class="n">1</span>Introduction &amp; My AI-Driven Learning Practice</h2>
             <h3 class="sub">1.1&nbsp;&nbsp;AI as My Personal University Learning Assistant</h3>
@@ -65,11 +66,11 @@
           </div>
         </td>
         <!-- MIDDLE COLUMN -->
-        <td style="width:33.333%; padding-right:120px;">
+        <td style="width:33.333%; padding-right:15mm;">
           <div class="col">
             <h2 class="sec"><span class="n">2</span>My Complete AI-Assisted Learning Workflow</h2>
             <h3 class="sub">2.1&nbsp;&nbsp;Four-Stage Learning Cycle</h3>
-            <p style="margin-bottom:26px;">This structured four-stage cycle prevents over-reliance and keeps human critical thinking at the centre of learning.</p>
+            <p style="margin-bottom:3.25mm;">This structured four-stage cycle prevents over-reliance and keeps human critical thinking at the centre of learning.</p>
             <div class="stage">
               <h4 class="kw">Stage 1&nbsp;&nbsp;Question Formulation &amp; Clear Prompt Design</h4>
               <p>Before consulting AI, I define concrete learning objectives. I record my existing knowledge, my attempted solutions and my specific confusion. Detailed, context-rich prompts produce far more useful replies than vague requests. I avoid commands such as &ldquo;solve this for me&rdquo;. Instead, I describe what I already know and what part I want to understand.</p>
@@ -91,7 +92,7 @@
               <div class="kwline">Keywords: note-taking; critical evaluation; knowledge consolidation</div>
             </div>
             <h3 class="sub">2.2&nbsp;&nbsp;Timeline: Iteration of GPT-Series Large Language Models</h3>
-            <p style="margin-bottom:26px;">My personal learning improves alongside rapid technical iteration of large-language-model systems:</p>
+            <p style="margin-bottom:3.25mm;">My personal learning improves alongside rapid technical iteration of large-language-model systems:</p>
             <div class="tl">
               <div class="tlrow"><div class="tlnode">GPT-1</div><div class="tlarrow">&#10132;</div><div class="tldesc">Limited text generation capability; no practical coding or advanced language feedback ability</div></div>
               <div class="tlrow"><div class="tlnode">GPT-2</div><div class="tlarrow">&#10132;</div><div class="tldesc">Larger training dataset; coherent short text generation, but weak reasoning</div></div>
@@ -131,9 +132,9 @@
     <!-- BOTTOM TWO COLUMNS -->
     <table class="cols" style="margin-bottom:0;">
       <tr>
-        <td style="width:50%; padding-right:120px;">
+        <td style="width:50%; padding-right:15mm;">
           <div class="col">
-            <h2 class="sec"><span class="n">4</span>My Perspective &amp; Personal Reflection <span style="font-size:40px; font-weight:600; color:#5a6b83;">(20% of assignment grade)</span></h2>
+            <h2 class="sec"><span class="n">4</span>My Perspective &amp; Personal Reflection <span style="font-size:5mm; font-weight:600; color:#5a6b83;">(20% of assignment grade)</span></h2>
             <p>I selected this topic because AI-assisted study forms a large part of my university daily life. I am fascinated by how fast large-model technology evolves, and I want to build healthy, effective learning habits before AI tools become even more powerful in the future. Working on this poster helped me formalise my scattered learning habits into a clear repeatable workflow. I realised that technical progress of AI does not automatically make people better learners. The value comes from how human learners organise questions, complete independent practice, and maintain critical evaluation towards machine outputs. Even with highly-advanced future-generation models, human-initiated thinking, practice and reflection will stay irreplaceable for mastering programming and language ability.</p>
             <div class="takeaway">
               <p>Core takeaway: Evolving AI is a powerful learning tool, yet critical human thinking remains irreplaceable in language and programming study.</p>
